@@ -11,5 +11,8 @@ module.exports = {
     migrations: {
         directory: patch.resolve(__dirname, 'src', 'database', 'migrations')
     },
+    seeds:{
+        directory: patch.resolve(__dirname, 'src', 'database', 'seeds')
+    },
     useNullAsDefault: true
 }

@@ -4,6 +4,7 @@ import UsersController from "./controllers/UsersController";
 const routes = express.Router()
 const usersController = new UsersController()
 
-routes.get('/', usersController.index)
+routes.get('/users', usersController.index)
+routes.post('/users', usersController.store)
 
 export default routes
